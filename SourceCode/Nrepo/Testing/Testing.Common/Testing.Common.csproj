@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40472C13-D7A4-47B3-915A-FA62FBA4EF00}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Testing.Common</RootNamespace>
+    <AssemblyName>Testing.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditableEntity.cs" />
+    <Compile Include="EditableEntity.cs" />
+    <Compile Include="FKAuditableEntities\Admin.cs" />
+    <Compile Include="FKAuditableEntities\Car.cs" />
+    <Compile Include="FKAuditableEntities\Computer.cs" />
+    <Compile Include="FKAuditableEntities\Description.cs" />
+    <Compile Include="FKAuditableEntities\Director.cs" />
+    <Compile Include="FKAuditableEntities\DirectorTracker.cs" />
+    <Compile Include="FKAuditableEntities\Manager.cs" />
+    <Compile Include="FKAuditableEntities\ManagerTracker.cs" />
+    <Compile Include="FKAuditableEntities\Office.cs" />
+    <Compile Include="FKAuditableEntities\Project.cs" />
+    <Compile Include="FKAuditableEntities\Thing.cs" />
+    <Compile Include="IAEntities\Admin.cs" />
+    <Compile Include="IAEntities\Car.cs" />
+    <Compile Include="IAEntities\Computer.cs" />
+    <Compile Include="IAEntities\Description.cs" />
+    <Compile Include="IAEntities\Director.cs" />
+    <Compile Include="IAEntities\DirectorTracker.cs" />
+    <Compile Include="IAEntities\Manager.cs" />
+    <Compile Include="IAEntities\ManagerTracker.cs" />
+    <Compile Include="IAEntities\Office.cs" />
+    <Compile Include="IAEntities\Project.cs" />
+    <Compile Include="IAEntities\Thing.cs" />
+    <Compile Include="SoftDeletableAuditableEntity.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="FKSoftDeletableAuditableEntities\Admin.cs" />
+    <Compile Include="FKSoftDeletableAuditableEntities\Car.cs" />
+    <Compile Include="FKSoftDeletableAuditableEntities\Computer.cs" />
+    <Compile Include="FKSoftDeletableAuditableEntities\Description.cs" />
+    <Compile Include="FKSoftDeletableAuditableEntities\Director.cs" />
+    <Compile Include="FKSoftDeletableAuditableEntities\DirectorTracker.cs" />
+    <Compile Include="FKSoftDeletableAuditableEntities\Manager.cs" />
+    <Compile Include="FKSoftDeletableAuditableEntities\ManagerTracker.cs" />
+    <Compile Include="FKSoftDeletableAuditableEntities\Office.cs" />
+    <Compile Include="FKSoftDeletableAuditableEntities\Project.cs" />
+    <Compile Include="FKSoftDeletableAuditableEntities\Thing.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Implementation\Nrepo.DataAccess\Nrepo.DataAccess.csproj">
+      <Project>{8eba278e-e363-40ab-b220-9e9aab7334c1}</Project>
+      <Name>Nrepo.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Implementation\Nrepo.Data\Nrepo.Data.csproj">
+      <Project>{f0628cb4-a991-4b1c-b9cf-50d7466718f9}</Project>
+      <Name>Nrepo.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Implementation\Nrepo\Nrepo.csproj">
+      <Project>{334a6342-280f-4cc2-b4a3-2194c869cd4b}</Project>
+      <Name>Nrepo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

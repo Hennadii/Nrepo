@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementation", "Implementation", "{7201B9FA-5C01-405B-9434-353EC7C53B4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{51E80CE7-611D-43B5-8EA6-D4759416C5CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nrepo", "Implementation\Nrepo\Nrepo.csproj", "{334A6342-280F-4CC2-B4A3-2194C869CD4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nrepo.Data", "Implementation\Nrepo.Data\Nrepo.Data.csproj", "{F0628CB4-A991-4B1C-B9CF-50D7466718F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nrepo.DataAccess", "Implementation\Nrepo.DataAccess\Nrepo.DataAccess.csproj", "{8EBA278E-E363-40AB-B220-9E9AAB7334C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nrepo.DataAccess.EntityFramework", "Implementation\Nrepo.DataAccess.EntityFramework\Nrepo.DataAccess.EntityFramework.csproj", "{08DF576D-A1A9-42D2-AD55-90581DD2B56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nrepo.DataAccess.Testing", "Testing\Nrepo.DataAccess.Testing\Nrepo.DataAccess.Testing.csproj", "{F93796AF-EA7D-47B5-94A0-C599CE5458B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA15C5F6-B50F-40B8-8B2A-AD2BC917CF38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing.Common", "Testing\Testing.Common\Testing.Common.csproj", "{40472C13-D7A4-47B3-915A-FA62FBA4EF00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nrepo.Testing", "Testing\Nrepo.Testing\Nrepo.Testing.csproj", "{6A5301E0-1FF0-45BD-BBC3-38C21F466E42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nrepo.DataAccess.EntityFramework.Testing", "Testing\Nrepo.DataAccess.EntityFramework.Testing\Nrepo.DataAccess.EntityFramework.Testing.csproj", "{A2016A39-5D9B-4E97-AEBF-A32237DDD413}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4DC6F70B-9379-459F-B469-4D62B02F468F}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{334A6342-280F-4CC2-B4A3-2194C869CD4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334A6342-280F-4CC2-B4A3-2194C869CD4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334A6342-280F-4CC2-B4A3-2194C869CD4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334A6342-280F-4CC2-B4A3-2194C869CD4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0628CB4-A991-4B1C-B9CF-50D7466718F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0628CB4-A991-4B1C-B9CF-50D7466718F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0628CB4-A991-4B1C-B9CF-50D7466718F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0628CB4-A991-4B1C-B9CF-50D7466718F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EBA278E-E363-40AB-B220-9E9AAB7334C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EBA278E-E363-40AB-B220-9E9AAB7334C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EBA278E-E363-40AB-B220-9E9AAB7334C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EBA278E-E363-40AB-B220-9E9AAB7334C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08DF576D-A1A9-42D2-AD55-90581DD2B56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08DF576D-A1A9-42D2-AD55-90581DD2B56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08DF576D-A1A9-42D2-AD55-90581DD2B56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08DF576D-A1A9-42D2-AD55-90581DD2B56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93796AF-EA7D-47B5-94A0-C599CE5458B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93796AF-EA7D-47B5-94A0-C599CE5458B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93796AF-EA7D-47B5-94A0-C599CE5458B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40472C13-D7A4-47B3-915A-FA62FBA4EF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40472C13-D7A4-47B3-915A-FA62FBA4EF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40472C13-D7A4-47B3-915A-FA62FBA4EF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A5301E0-1FF0-45BD-BBC3-38C21F466E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A5301E0-1FF0-45BD-BBC3-38C21F466E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A5301E0-1FF0-45BD-BBC3-38C21F466E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2016A39-5D9B-4E97-AEBF-A32237DDD413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2016A39-5D9B-4E97-AEBF-A32237DDD413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2016A39-5D9B-4E97-AEBF-A32237DDD413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{334A6342-280F-4CC2-B4A3-2194C869CD4B} = {7201B9FA-5C01-405B-9434-353EC7C53B4C}
+		{F0628CB4-A991-4B1C-B9CF-50D7466718F9} = {7201B9FA-5C01-405B-9434-353EC7C53B4C}
+		{8EBA278E-E363-40AB-B220-9E9AAB7334C1} = {7201B9FA-5C01-405B-9434-353EC7C53B4C}
+		{08DF576D-A1A9-42D2-AD55-90581DD2B56D} = {7201B9FA-5C01-405B-9434-353EC7C53B4C}
+		{F93796AF-EA7D-47B5-94A0-C599CE5458B3} = {51E80CE7-611D-43B5-8EA6-D4759416C5CC}
+		{40472C13-D7A4-47B3-915A-FA62FBA4EF00} = {51E80CE7-611D-43B5-8EA6-D4759416C5CC}
+		{6A5301E0-1FF0-45BD-BBC3-38C21F466E42} = {51E80CE7-611D-43B5-8EA6-D4759416C5CC}
+		{A2016A39-5D9B-4E97-AEBF-A32237DDD413} = {51E80CE7-611D-43B5-8EA6-D4759416C5CC}
+	EndGlobalSection
+EndGlobal

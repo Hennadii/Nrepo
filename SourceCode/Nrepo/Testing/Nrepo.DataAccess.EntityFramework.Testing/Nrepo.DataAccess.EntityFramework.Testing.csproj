@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2016A39-5D9B-4E97-AEBF-A32237DDD413}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nrepo.DataAccess.EntityFramework.Testing</RootNamespace>
+    <AssemblyName>Nrepo.DataAccess.EntityFramework.Testing</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\..\packages\Moq.4.2.1402.2112\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="EFRepositoryTesting\EFContext.cs" />
+    <Compile Include="EFRepositoryTesting\EFEntityChild.cs" />
+    <Compile Include="EFRepositoryTesting\EFRepositoryTester.cs" />
+    <Compile Include="EFRepositoryTesting\EFEntity.cs" />
+    <Compile Include="EFRepositoryTesting\EFRepositoryTesting.cs" />
+    <Compile Include="FKAuditableTesting\EFContext.cs" />
+    <Compile Include="FKAuditableTesting\EFRepositoryTester.cs" />
+    <Compile Include="FKAuditableTesting\EFRepositoryTesting.Add.cs" />
+    <Compile Include="FKAuditableTesting\EFRepositoryTesting.cs" />
+    <Compile Include="FKAuditableTesting\EFRepositoryTesting.Delete.cs" />
+    <Compile Include="FKAuditableTesting\EFRepositoryTesting.Get.cs" />
+    <Compile Include="FKAuditableTesting\EFRepositoryTesting.Update.cs" />
+    <Compile Include="FKSoftDeletableAuditableTesting\EFContext.cs" />
+    <Compile Include="EFRepositoryTesting\UnknownCondition.cs" />
+    <Compile Include="FKSoftDeletableAuditableTesting\EFRepositoryTester.cs" />
+    <Compile Include="FKSoftDeletableAuditableTesting\EFRepositoryTesting.Add.cs" />
+    <Compile Include="FKSoftDeletableAuditableTesting\EFRepositoryTesting.cs" />
+    <Compile Include="FKSoftDeletableAuditableTesting\EFRepositoryTesting.Delete.cs" />
+    <Compile Include="FKSoftDeletableAuditableTesting\EFRepositoryTesting.Get.cs" />
+    <Compile Include="FKSoftDeletableAuditableTesting\EFRepositoryTesting.Update.cs" />
+    <Compile Include="IATesting\EFContext.cs" />
+    <Compile Include="IATesting\EFRepositoryTester.cs" />
+    <Compile Include="IATesting\EFRepositoryTesting.Add.cs" />
+    <Compile Include="IATesting\EFRepositoryTesting.cs" />
+    <Compile Include="IATesting\EFRepositoryTesting.Delete.cs" />
+    <Compile Include="IATesting\EFRepositoryTesting.Get.cs" />
+    <Compile Include="IATesting\EFRepositoryTesting.Update.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryFilterInterpreterTesting.cs" />
+    <Compile Include="ExpressionBuilderTesting.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Implementation\Nrepo.DataAccess.EntityFramework\Nrepo.DataAccess.EntityFramework.csproj">
+      <Project>{08df576d-a1a9-42d2-ad55-90581dd2b56d}</Project>
+      <Name>Nrepo.DataAccess.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Implementation\Nrepo.DataAccess\Nrepo.DataAccess.csproj">
+      <Project>{8eba278e-e363-40ab-b220-9e9aab7334c1}</Project>
+      <Name>Nrepo.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Implementation\Nrepo.Data\Nrepo.Data.csproj">
+      <Project>{f0628cb4-a991-4b1c-b9cf-50d7466718f9}</Project>
+      <Name>Nrepo.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Implementation\Nrepo\Nrepo.csproj">
+      <Project>{334a6342-280f-4cc2-b4a3-2194c869cd4b}</Project>
+      <Name>Nrepo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Testing.Common\Testing.Common.csproj">
+      <Project>{40472c13-d7a4-47b3-915a-fa62fba4ef00}</Project>
+      <Name>Testing.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
